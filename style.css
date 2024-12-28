@@ -71,12 +71,6 @@ h2 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
 }
 
-/* Buttons */
-
-.btn-orange:hover {
-  background-color: #ff4500; /* Warna oranye gelap saat hover */
-}
-
 /* Footer */
 .bg-dark-cream {
   background-color: #f4a560; /* Warna krem gelap untuk footer */
@@ -202,6 +196,7 @@ section,
   font-weight: bold;
   border-radius: 5px;
   transition: background-color 0.3s ease;
+  text-decoration: none;
 }
 
 .btn-orange:hover {
