@@ -1,0 +1,250 @@
+/* style.css */
+body {
+  background-image: url("img/background.png"); /* Ganti dengan nama file gambar Anda */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding-top: 80px; /* Tambahkan padding lebih besar agar konten tidak tertutup */
+  margin: 0;
+  padding: 0;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparansi putih 50% */
+  z-index: -1;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #de480db3 !important; /* Warna sesuai tema */
+  color: white !important; /* Teks di navbar */
+  position: fixed;
+  top: 0;
+  z-index: 1000; /* Pastikan navbar berada di atas konten lain */
+  width: 100%; /* Menjaga navbar tetap lebar penuh */
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff !important;
+}
+
+.navbar-nav .nav-link {
+  color: #fff !important; /* Teks navbar menjadi putih */
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffd700 !important; /* Efek hover warna kuning keemasan */
+}
+
+/* Headings */
+h1,
+h2 {
+  background: transparent; /* Hilangkan background putih */
+  color: #de480d; /* Warna teks tetap oranye */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan teks agar terlihat jelas di background */
+}
+
+#info h3 {
+  color: #de480df0; /* Warna judul */
+  font-weight: bold;
+}
+
+#info p {
+  color: #000000; /* Warna teks deskripsi */
+  line-height: 1.6;
+}
+
+#info .col-md-6 {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: transparent !important; /* Menghapus warna latar */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+}
+
+/* Buttons */
+
+.btn-orange:hover {
+  background-color: #ff4500; /* Warna oranye gelap saat hover */
+}
+
+/* Footer */
+.bg-dark-cream {
+  background-color: #f4a560; /* Warna krem gelap untuk footer */
+  color: #ffffff;
+}
+
+footer {
+  padding: 15px 0;
+  font-size: 0.85rem;
+  background-color: #b43e14; /* Warna sedikit lebih gelap */
+}
+
+section#products {
+  background-color: rgba(255, 255, 255, 0.8); /* Warna putih dengan transparansi */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tambahkan bayangan lembut */
+  border-radius: 8px; /* Buat sudut membulat */
+  padding: 20px; /* Beri jarak di dalam */
+  margin: 20px auto; /* Rata tengah dengan margin */
+  max-width: 1200px; /* Batasi lebar maksimal */
+}
+
+/* Cards */
+.card {
+  border: 0.5px solid #f4a460; /* Warna bingkai kartu lebih lembut (emas) */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05); /* Efek zoom saat hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow lebih tebal */
+}
+
+.card-title {
+  color: #ff4500; /* Warna judul kartu */
+}
+
+.card-text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+/* Carousel */
+.carousel-inner img {
+  height: auto; /* Menjaga ukuran gambar */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+  width: 100%; /* Gambar mengisi lebar container carousel */
+  max-height: 400px; /* Menentukan tinggi maksimal gambar */
+  object-fit: contain; /* Menjaga gambar tidak terpotong dan mempertahankan proporsinya */
+  border-radius: 30px; /* Membuat sudut gambar melengkung */
+  margin: 0 auto; /* Menjaga gambar tetap di tengah */
+}
+
+/* Tombol Navigasi */
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: rgba(0, 0, 0, 0.3); /* Warna latar belakang tombol navigasi */
+  border-radius: 50%; /* Membuat tombol navigasi berbentuk lingkaran */
+  padding: 10px; /* Menambah padding agar lebih besar */
+}
+
+/* Mengubah tampilan indikator */
+.carousel-indicators button {
+  background-color: rgba(255, 255, 255, 0.6); /* Warna transparan putih untuk indikator */
+  border-radius: 50%; /* Bentuk lingkaran pada indikator */
+  width: 12px; /* Ukuran indikator lebih kecil */
+  height: 12px; /* Ukuran indikator lebih kecil */
+  transition: background-color 0.3s ease; /* Transisi saat hover */
+}
+
+/* Warna indikator aktif */
+.carousel-indicators .active {
+  background-color: #ff7f50; /* Warna aktif oranye */
+}
+
+/* Efek hover pada indikator */
+.carousel-indicators button:hover {
+  background-color: #ff4500; /* Warna indikator saat hover */
+}
+
+section,
+.bg-light {
+  background: transparent !important;
+  z-index: 0;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff !important;
+}
+
+/* Form Section */
+
+.form-label {
+  color: #de480df0; /* Warna label form */
+}
+
+.form-control,
+.form-select {
+  border: 1px solid #ff7f50; /* Border form warna oranye */
+  border-radius: 5px;
+  border-color: #f8b400; /* Warna lebih cerah untuk border */
+  transition: box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #ff4500; /* Border warna oranye gelap saat fokus */
+  box-shadow: 0 0 5px rgba(255, 69, 0, 0.5); /* Efek glow saat fokus */
+}
+
+.is-invalid {
+  border-color: #dc3545 !important; /* Border merah untuk validasi */
+}
+
+/* Submit Button */
+.btn-orange {
+  background-color: #ff7f50;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.btn-orange:hover {
+  background-color: #ff4500; /* Warna lebih gelap saat hover */
+}
+
+/* Success Message */
+#success-message {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #28a745; /* Hijau sukses */
+}
+
+/* Pesan sukses */
+#success-message {
+  font-weight: bold;
+  color: #28a745;
+  animation: fadeIn 0.5s ease;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Responsive styling */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .card-title {
+    font-size: 1rem;
+  }
+}
+.carousel-inner img {
+  opacity: 0.8;
+  transition: opacity 0.5s ease;
+}
+
+.carousel-inner img:hover {
+  opacity: 1; /* Kembali ke tidak transparan saat di-hover */
+}
